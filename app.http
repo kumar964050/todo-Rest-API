@@ -1,0 +1,41 @@
+
+### get Todos
+GET http://localhost:3000/todos
+
+### get rest api
+GET http://localhost:3000/todos/?priority=HIGH&status=IN%20PROGRESS
+
+
+### get todo with ID
+GET http://localhost:3000/todos/6
+
+### get agenda
+GET http://localhost:3000/agenda/?date=2021-12-12
+
+
+###POST todo
+POST http://localhost:3000/todos
+Content-Type:  application/json
+
+{
+  "id": 6,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO",
+  "category": "HOME",
+  "dueDate": "2021-02-22"
+}
+
+
+
+
+#### Put
+PUT http://localhost:3000/todos/6
+Content-Type:  application/json
+
+{
+    "todo" : "Hi"
+}
+
+#### delete Todo
+DELETE http://localhost:3000/todos/6
